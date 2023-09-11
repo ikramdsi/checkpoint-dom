@@ -1,0 +1,64 @@
+/* Styles pour votre panier */
+.cart {
+  width: 100%; /* Largeur totale du panier */
+  max-width: 600px; /* Largeur maximale du panier pour éviter qu'il ne devienne trop large */
+  margin: 0 auto; /* Centrer le panier horizontalement */
+  padding: 20px; /* Marge intérieure pour l'espace interne du panier */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Espacement entre les articles */
+  border: 1px solid #ccc; /* Bordure autour de chaque article */
+  padding: 10px; /* Marge intérieure de chaque article */
+}
+
+.cart-item img {
+  max-width: 100%; /* Agrandissement de l'image pour s'adapter au cadre */
+  height: auto; /* Conserver le rapport hauteur/largeur de l'image */
+}
+
+.item-name {
+  flex-grow: 1;
+  margin-left: 10px; /* Espacement entre le nom de l'article et l'image */
+}
+
+.item-price {
+  margin-right: 10px; /* Espacement entre le prix de l'article et les boutons */
+}
+
+.item-quantity {
+  width: 40px;
+  text-align: center;
+}
+
+.increment-button,
+.decrement-button,
+.delete-button,
+.like-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px; /* Espacement entre les boutons */
+}
+
+.increment-button:hover,
+.decrement-button:hover,
+.delete-button:hover,
+.like-button:hover {
+  background-color: #0056b3; /* Couleur au survol */
+}
+
+.like-button.liked {
+  color: red; /* Changer la couleur lorsque l'article est aimé */
+}
+
+.total {
+  text-align: right;
+  margin-top: 20px; /* Espacement entre les articles et le total */
+  font-weight: bold;
+}
